@@ -120,7 +120,7 @@ export default function TestimonialsSlider() {
     };
 
     return (
-        <div className="flex justify-center items-center">
+        <div id="clients" className="flex justify-center items-center">
             <div className="w-full max-w-6xl relative">
                 <div className="text-center mb-8">
                     <p className="text-green-500 text-xl font-semibold">Here's</p>

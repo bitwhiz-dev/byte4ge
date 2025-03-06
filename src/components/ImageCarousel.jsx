@@ -120,12 +120,12 @@ export default function TestimonialsSlider() {
     };
 
     return (
-        <div className="flex justify-center items-center">
+        <div id="clients" className="flex justify-center items-center">
             <div className="w-full max-w-6xl relative">
                 <div className="text-center mb-8">
-                    <p className="text-orange-500 text-xl font-semibold">Here's</p>
+                    <p className="text-green-500 text-xl font-semibold">Here's</p>
                     <h2 className="text-4xl font-bold text-white">What Our Clients Say</h2>
-                    <p className="text-gray-300 text-lg">Trusted by businesses worldwide</p>
+                    <p className="text-gray-300 text-lg">Trusted by businesses </p>
                 </div>
 
                 {isLoading ? (
@@ -171,14 +171,14 @@ export default function TestimonialsSlider() {
                         <Slider {...settings}>
                             {testimonials.map((testimonial) => (
                                 <div key={testimonial.id} className="px-2.5">
-                                    <div className="bg-[#00040f] p-4 sm:p-6 rounded-lg text-white flex flex-col h-[400px] border border-gray-300 hover:border-gray-400 transition-colors">
+                                    <div className="bg-[#00040f] p-4 sm:p-6 rounded-lg text-white flex flex-col h-[400px] border border-gray-900 hover:border-gray-600 transition-colors">
                                         <div className="flex flex-col items-center">
                                             <img
                                                 src={testimonial.image}
                                                 alt={testimonial.name}
                                                 className="w-16 h-16 sm:w-24 sm:h-24 rounded-full object-cover mb-3 sm:mb-4"
                                             />
-                                            <h3 className="text-2xl font-bold text-orange-500 mb-3">{testimonial.name}</h3>
+                                            <h3 className="text-2xl font-bold text-green-500 mb-3">{testimonial.name}</h3>
                                         </div>
 
                                         <div className="flex-1 overflow-y-auto custom-scrollbar mb-4">
@@ -189,14 +189,14 @@ export default function TestimonialsSlider() {
                                             </div>
                                         </div>
 
-                                        <div className="w-full pt-4 border-t border-gray-300">
+                                        <div className="w-full pt-4 border-t border-gray-900">
                                             <div className="flex items-center justify-center gap-2">
-                                                <span className="text-orange-500 text-sm font-medium">Rating:</span>
+                                                <span className="text-gray-500 text-sm font-medium">Rating:</span>
                                                 <div className="flex">
                                                     {[...Array(parseInt(testimonial.rating))].map((_, i) => (
                                                         <svg
                                                             key={i}
-                                                            className="w-5 h-5 text-yellow-500 fill-current"
+                                                            className="w-5 h-5 text-green-500 fill-current"
                                                             viewBox="0 0 24 24"
                                                         >
                                                             <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />

@@ -37,6 +37,7 @@ const AppContent = () => (
         <Billing />
         <CardDeal />
         <Testimonials />
+        {/* // testimonial has '#clients id ' for navigation */}
         {/* <ImageCarousel /> */}
         {/* <Clients /> */}
         <CTA />
